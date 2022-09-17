@@ -6,7 +6,8 @@
   "scripts": {
     "deploy": "npm run build && node ./dist/deploy.js",
     "build": "tsc",
-    "lint": "eslint . --ext .ts --fix"
+    "lint": "eslint . --ext .ts --fix",
+    "refreshVSToken" : "vsts-npm-auth -config .npmrc"
   },
   "author": "",
   "dependencies": {
@@ -34,8 +35,5 @@
     "chalk": "^4.1.0",
     "eslint": "^7.15.0",
     "typescript": "^4.0.5"
-  },
-  "scripts": {
-    "refreshVSToken" : "vsts-npm-auth -config .npmrc"
- }
+  }
 }
