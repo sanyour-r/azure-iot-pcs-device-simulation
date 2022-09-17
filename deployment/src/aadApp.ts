@@ -70,7 +70,7 @@ export async function createServicePrincipal(appId: string): Promise<MicrosoftGr
 
     try{
         return await _client.api('/servicePrincipals').post(servicePrincipalCreateParameters);
-    }catch(ex){
+    }catch(ex:any){
         const msg = ex.message? ex.message : '';
         throw new Error(`Service-principal creation failed. ${msg}`);
     }
