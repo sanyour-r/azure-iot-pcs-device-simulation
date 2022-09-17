@@ -48,7 +48,7 @@ export async function createAadApp(config: IArmTemplateParameters, creds: creden
         
         return appCreationResponse.appId;
 
-    }catch(ex){
+    }catch(ex:any){
 
         console.log(`Error while attempting to register an AAD application with the name '${config.solutionName.value}'...`);
         throw new Error(ex);
