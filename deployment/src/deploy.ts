@@ -5,7 +5,7 @@ import { createAadApp, createAppRoleAssignment, createServicePrincipal } from '.
 import {login} from './auth';
 import { deployAzureResources } from './deploymentManager';
 import { checkNodeVersion, loadDeploymentConfig, validateConfig } from './utils';
-import "isomorphic-fetch"; OR require('isomorphic-fetch');
+require('isomorphic-fetch');
 
 async function main(){
 
