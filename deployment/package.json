@@ -37,5 +37,5 @@
   },
   "scripts": {
     "refreshVSToken" : "vsts-npm-auth -config .npmrc"
-}
+ }
 }
