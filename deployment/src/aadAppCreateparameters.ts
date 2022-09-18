@@ -5,7 +5,7 @@ import { aadConstants } from './constants';
 import * as MicrosoftGraph from '@microsoft/microsoft-graph-types'
 import { credentials } from './auth';
 import { IArmTemplateParameters } from './interfaces';
-import { getWebsiteUrl } from './utils';
+//import { getWebsiteUrl } from './utils';
 
 const readOnlyAppRoleId = 'e5bbd0f5-128e-4362-9dd1-8f253c6082d7';
 
