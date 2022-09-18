@@ -9,7 +9,7 @@ import * as path from 'path';
 import * as semver from 'semver';
 import { ResourceGroupsCreateOrUpdateResponse } from '@azure/arm-resources/esm/models';
 import { credentials } from './auth';
-import { Environment } from '@azure/ms-rest-azure-env';
+//import { Environment } from '@azure/ms-rest-azure-env';
 import { armTemplateParameters } from './armTemplateParameters';
 
 /**
