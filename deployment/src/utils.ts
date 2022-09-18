@@ -158,8 +158,8 @@ export function checkNodeVersion(): void{
 }
 
  function getDomain(creds: credentials): string {
-    let domain = '.azurewebsites.net';
-    switch (creds.environment.name) {
+    let domain = '.mysimulationsensors.com';
+   /* switch (creds.environment.name) {
         case Environment.AzureCloud.name:
             domain = '.azurewebsites.net';
             break;
@@ -175,6 +175,6 @@ export function checkNodeVersion(): void{
         default:
             domain = '.azurewebsites.net';
             break;
-    }
+    } */
     return domain;
 } 
