@@ -146,10 +146,10 @@ export function validateConfig(config: IArmTemplateParameters): void{
     }
 }
 
-/* export function getWebsiteUrl(hostName: string, creds: credentials): string {
+export function getWebsiteUrl(hostName: string, creds: credentials): string {
     // const domain = getDomain(creds);
     return `https://sanyourhotmail.onmicrosoft.com/mysimulation`;
-} */
+} 
 
 export function checkNodeVersion(): void{
     if(semver.lt(process.versions.node, configurationConstants.MINIMUM_NODEJS_VERSION)){
