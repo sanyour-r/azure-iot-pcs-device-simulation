@@ -9,7 +9,7 @@ import * as path from 'path';
 import * as semver from 'semver';
 import { ResourceGroupsCreateOrUpdateResponse } from '@azure/arm-resources/esm/models';
 import { credentials } from './auth';
-//import { Environment } from '@azure/ms-rest-azure-env';
+import { Environment } from '@azure/ms-rest-azure-env';
 import { armTemplateParameters } from './armTemplateParameters';
 
 /**
@@ -147,8 +147,8 @@ export function validateConfig(config: IArmTemplateParameters): void{
 }
 
 export function getWebsiteUrl(hostName: string, creds: credentials): string {
-    // const domain = getDomain(creds);
-    return `https://SanyourRhotmail.onmicrosoft.com/mySimulation`;
+    const domain = getDomain(creds);
+    return `https://${hostName}${domain}`;
 }
 
 export function checkNodeVersion(): void{
@@ -157,7 +157,7 @@ export function checkNodeVersion(): void{
     }
 }
 
-/* function getDomain(creds: credentials): string {
+ function getDomain(creds: credentials): string {
     let domain = '.azurewebsites.net';
     switch (creds.environment.name) {
         case Environment.AzureCloud.name:
@@ -177,4 +177,4 @@ export function checkNodeVersion(): void{
             break;
     }
     return domain;
-} */
+} 
