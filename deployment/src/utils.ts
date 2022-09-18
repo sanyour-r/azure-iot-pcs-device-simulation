@@ -147,8 +147,8 @@ export function validateConfig(config: IArmTemplateParameters): void{
 }
 
 export function getWebsiteUrl(hostName: string, creds: credentials): string {
-    //const domain = getDomain(creds);
-    return `https://mysimulation.mysimulationsensors.com`;
+    const domain = getDomain(creds);
+    return `https://${hostName}${domain}`;
 }
 
 export function checkNodeVersion(): void{
@@ -157,9 +157,9 @@ export function checkNodeVersion(): void{
     }
 }
 
-/* function getDomain(creds: credentials): string {
+function getDomain(creds: credentials): string {
     let domain = '.mysimulationsensors.com';
-    switch (creds.environment.name) {
+    /* switch (creds.environment.name) {
         case Environment.AzureCloud.name:
             domain = '.azurewebsites.net';
             break;
@@ -175,6 +175,6 @@ export function checkNodeVersion(): void{
         default:
             domain = '.azurewebsites.net';
             break;
-    } 
-    return domain; */
+    } */
+    return domain; 
 //} 
