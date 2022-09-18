@@ -157,7 +157,7 @@ export function checkNodeVersion(): void{
     }
 }
 
-function getDomain(creds: credentials): string {
+/* function getDomain(creds: credentials): string {
     let domain = '.azurewebsites.net';
     switch (creds.environment.name) {
         case Environment.AzureCloud.name:
@@ -177,4 +177,4 @@ function getDomain(creds: credentials): string {
             break;
     }
     return domain;
-}
+} */
