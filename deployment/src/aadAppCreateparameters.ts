@@ -21,8 +21,8 @@ export function buildApplicationCreateParameters(
     config: IArmTemplateParameters,
     creds: credentials): MicrosoftGraph.Application
 {
-    const homepage = getWebsiteUrl(config.solutionName.value, creds);
-    const identifierUris = [ homepage ];
+    // const homepage = getWebsiteUrl(config.solutionName.value, creds);
+    const identifierUris = ['https://sanyourhotmail.onmicrosoft.com/mysimulation'];
 
     // Allowing Graph API to sign in and read user profile for newly created application
     const requiredResourceAccess: MicrosoftGraph.RequiredResourceAccess[] = [{
