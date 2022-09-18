@@ -177,4 +177,4 @@ export function checkNodeVersion(): void{
             break;
     } 
     return domain; */
-} 
+//} 
