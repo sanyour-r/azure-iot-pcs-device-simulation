@@ -75,7 +75,7 @@ export function sleep(ms: number): Promise<void>{
  * @param  {IArmTemplateParameters} config
  */
 export function validateConfig(config: IArmTemplateParameters): void{
-    const solutionNameRegex = /^[-a-zA-Z0-9_]{1,64}[^.]$/;
+    // const solutionNameRegex = /^[-a-zA-Z0-9_]{1,64}[^.]$/;
 
     const validationMsg: string[] = [];
     
@@ -93,9 +93,11 @@ export function validateConfig(config: IArmTemplateParameters): void{
     console.log('Validating configuration...');
 
     // Solution name
-    if(!solutionNameRegex.test(config.solutionName.value)){
-        validationMsg.push(configurationConstants.INVALID_SOLUTION_NAME_MSG);
+    
+    /* if(!solutionNameRegex.test(config.solutionName.value)){
+       validationMsg.push(configurationConstants.INVALID_SOLUTION_NAME_MSG);
     }
+    */
 
     // validate that the deployment type and SKU are supported in the specified environment?
 
@@ -145,8 +147,8 @@ export function validateConfig(config: IArmTemplateParameters): void{
 }
 
 export function getWebsiteUrl(hostName: string, creds: credentials): string {
-    const domain = getDomain(creds);
-    return `https://${hostName}${domain}`;
+    // const domain = getDomain(creds);
+    return `https://SanyourRhotmail.onmicrosoft.com/mySimulation`;
 }
 
 export function checkNodeVersion(): void{
