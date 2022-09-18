@@ -147,7 +147,7 @@ export function validateConfig(config: IArmTemplateParameters): void{
 }
 
 export function getWebsiteUrl(hostName: string, creds: credentials): string {
-    const domain = getDomain(creds);
+    //const domain = getDomain(creds);
     return `https://mysimulation.mysimulationsensors.com`;
 }
 
